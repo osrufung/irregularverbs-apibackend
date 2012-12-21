@@ -1,5 +1,5 @@
 # Irregular Verbs API
-A very simple API Backend in JSON format running in Google App Engine. <http://irregular-verbs.appspot.com/irregularverbsapi> 
+A very simple API Backend in JSON format running in Google App Engine <http://irregular-verbs.appspot.com/irregularverbsapi> for my iOS Irregular Verbs App <https://github.com/osrufung/irregularverbs>  
 
 ## Ingredients
 
