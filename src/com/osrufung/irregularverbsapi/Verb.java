@@ -17,6 +17,8 @@ public class Verb {
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
 	Long id;
 	@Persistent
+	int level;
+	@Persistent
 	String simple;	
 	@Persistent
 	String past;
@@ -24,17 +26,24 @@ public class Verb {
 	String participle;
 	@Persistent
 	String translation;
-	public Verb(String simple, String past, String participle, String translation) {
+	public Verb(String simple, String past, String participle, String translation,int level) {
 		super();
 		this.simple = simple;
 		this.past = past;
 		this.participle = participle;
 		this.translation = translation;
+		this.level = level;
 	}
 	public String toJson(){
 		Gson gson = new Gson();
 		String json = gson.toJson(this);
 		return json;
+	}
+	public int getLevel() {
+		return level;
+	}
+	public void setLevel(int level) {
+		this.level = level;
 	}
 	public Long getId() {
 		return id;

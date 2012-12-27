@@ -20,9 +20,9 @@ public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOExc
 		List lista = new ArrayList();
 		
 		
-		Verb v1 = new Verb("become","became","become","llegar a ser");
+		Verb v1 = new Verb("become","became","become","llegar a ser",1);
 		lista.add(v1);
-		Verb v2 = new Verb("begin","began","begun","empezar");
+		Verb v2 = new Verb("begin","began","begun","empezar",2);
 		lista.add(v2);
 		try{
 		pm.makePersistentAll(lista);
